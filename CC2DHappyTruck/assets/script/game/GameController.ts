@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, instantiate, Vec3, Prefab, BoxCollider2D, IPhysics2DContact, view, ResolutionPolicy } from 'cc';
+import { _decorator, Component, Node, instantiate, Vec3, Prefab, BoxCollider2D, IPhysics2DContact, view, ResolutionPolicy, director } from 'cc';
 import { DrawBridge } from './DrawBridge';
 import { TruckControl } from './Truck';
 const { ccclass, property } = _decorator;
@@ -52,5 +52,13 @@ export class GameController extends Component {
         } else {
             console.error("Truck 预制体未设置！");
         }
+    }
+
+    NextLevel() {
+        director.loadScene('game-level2');
+    }
+
+    BackLevel() {
+        director.loadScene('game');
     }
 }
