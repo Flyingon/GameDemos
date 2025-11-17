@@ -2524,7 +2524,7 @@
     },
     "component": "",
     "_componentId": "fcd1dTtFDJIGa0I6pyOcgmj",
-    "handler": "BackLevel",
+    "handler": "Restart",
     "customEventData": ""
   },
   {
