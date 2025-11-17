@@ -1,0 +1,14 @@
+{
+  "name": "CCJigsawPuzzle",
+  "uuid": "018ff79d-56fa-4284-be52-4efe1f3cd84a",
+  "creator": {
+    "version": "3.8.7"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "test": "ts-node -P tsconfig.scripts.json ./scripts/verify-gridSlicer.ts && ts-node -P tsconfig.scripts.json ./scripts/verify-rotation.ts"
+  }
+}
